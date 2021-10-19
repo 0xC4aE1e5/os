@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webOS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script>
+        function viewApps() {
+            if (!document.getElementById("apps").style.display != "none") {
+                document.getElementById("apps").style.display = "block";
+                document.getElementById("wallpaper").style.display = "none";
+            } else {
+                document.getElementById("apps").style.display = "none";
+                document.getElementById("wallpaper").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <div id="panel"><paneltext onclick="viewApps();">Apps</paneltext></div>

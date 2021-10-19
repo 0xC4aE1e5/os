@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <table>
@@ -19,6 +19,20 @@
                 <img src="icons/dropbox.png">
                 <center>Dropbox</center>
             </td>
+            <td onclick="build();">
+                <img src="icons/jigsaw.png">
+                <center>New</center>
+            </td>
+            <fieldset id="appMUI" style="display: none;">
+                <legend>New</legend>
+                <form onsubmit="generate();">
+                    <span>App Name:</span><input type="text" id="appName">
+                    <br>
+                    <span>App Link:</span><input type="url" id="appLink">
+                    <br>
+                    <input type="submit" value="Create">
+                </form>
+            </fieldset>
         </tr>
     </table>
 </body>
