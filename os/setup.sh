@@ -16,15 +16,3 @@ cat > /etc/xdg/openbox/autostart <<EOF
 xsetroot -solid #000000
 /opt/chrome-linux/chrome --kiosk file:///webOS/index.html
 EOF
-
-cat > /usr/share/applications/wot.desktop <<EOF
-[Desktop Entry]
-Type=Application
-Encoding=UTF-8
-Name=webOS developer console
-Comment=How did you find this?
-Exec=xterm
-Icon=
-Terminal=False
-MimeType=x-scheme-handler/wot
-EOF
