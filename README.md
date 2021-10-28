@@ -3,7 +3,7 @@ webOS is a tiny OS written for the web, in the web. It's very similar to ChromeO
 ## Install
 ### Recommended system requirements
 - Any CPU
-- 3 gigabytes of RAM
+- 2 gigabytes of RAM
 - 10 gigabytes of disk space (base: Ubuntu 20.04 using minimal install)
 - Internet access
 
