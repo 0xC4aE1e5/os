@@ -7,7 +7,7 @@ webOS is a tiny OS written for the web, in the web. It's very similar to ChromeO
 - 10 gigabytes of disk space (base: Ubuntu 20.04 using minimal install)
 - Internet access
 
-Depending on the distro you plan to install with (first is an Ubuntu-based distro, and then install webOS on top of that), the requirements may be different. Refer to the distro's system requirements if you are not using Ubuntu, for example you're using Linux Mint or Kubuntu instead.
+Depending on the distro you plan to install with (first is an Ubuntu-based distro, and then install webOS on top of that), the requirements may be different. Refer to the distro's system requirements if you are not using Ubuntu, for example you're using Linux Mint or Xubuntu instead.
 <hr>
 
 If you meet the minimum requirements, run this command in the terminal:
