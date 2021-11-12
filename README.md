@@ -1,5 +1,5 @@
-# webOS
-webOS is a tiny OS written for the web, in the web. It's very similar to ChromeOS, but with less tracking, annoyances, and Googliness.
+# IonOS
+IonOS is a tiny OS written for the web, in the web. It's very similar to ChromeOS, but with less tracking, annoyances, and Googliness.
 ## Install
 ### Recommended system requirements
 - Any CPU
