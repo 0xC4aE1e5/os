@@ -18,7 +18,7 @@ curl -Ls https://git.io/JnaUB | sudo bash
 
 ### Manual install
 <hr>
-You can install manually. First, you need wget, Subversion, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the os login screen.
+You can install manually. First, you need wget, Subversion, Openbox, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the login screen. This is helpful when you need another distro, like Fedora on a Lenovo with Broadcom.
 
 **Note**: If you wish to use SDDM, make sure it is the default display manager.
 
