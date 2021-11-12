@@ -18,7 +18,7 @@ curl -Ls https://git.io/JnaUB | sudo bash
 
 ### Manual install
 <hr>
-You can install manually. First, you need wget, Subversion, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the webOS login screen.
+You can install manually. First, you need wget, Subversion, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the os login screen.
 
 **Note**: If you wish to use SDDM, make sure it is the default display manager.
 
@@ -29,14 +29,14 @@ sudo wget "https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots" -O
 sudo unzip chromium.zip -d /opt
 popd
 pushd /
-sudo svn checkout https://github.com/ionllc/webOS.git/trunk/shell
-sudo mv shell webOS
+sudo svn checkout https://github.com/ionllc/os.git/trunk/shell
+sudo mv shell os
 popd
 ```
 Also, edit `/etc/xdg/openbox/autostart` with your favorite text editor and put:
 ```bash
 xsetroot -solid '#000000'
-/opt/chrome-linux/chrome --kiosk file:///webOS/index.html
+/opt/chrome-linux/chrome --kiosk file:///os/index.html
 ```
 
 ## Uninstall
@@ -62,7 +62,7 @@ sudo apt remove sddm -y
 ```
 
 ## Interacting with Linux
-webOS **does not come with a terminal app**. However, using TTY5, we can use the terminal. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>, and login with your SDDM credentials (the login screen). Now, you can run your Linux commands!
+OS **does not come with a terminal app**. However, using TTY5, we can use the terminal. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>, and login with your SDDM credentials (the login screen). Now, you can run your Linux commands!
 ### GUI Apps
 <hr>
 
