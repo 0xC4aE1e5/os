@@ -65,6 +65,7 @@ sudo apt remove sddm -y
 webOS **does not come with a terminal app**. However, using TTY5, we can use the terminal. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>, and login with your SDDM credentials (the login screen). Now, you can run your Linux commands!
 ### GUI Apps
 <hr>
+
 Run:
 ```bash
 DISPLAY=:0 <gui app> &
