@@ -13,6 +13,6 @@ sudo svn checkout https://github.com/ionllc/os.git/trunk/shell
 sudo mv shell os
 popd
 cat > /etc/xdg/openbox/autostart <<EOF
-xsetroot -solid #000000
+xsetroot -solid '#000000'
 /opt/chrome-linux/chrome --kiosk file:///os/index.html
 EOF
