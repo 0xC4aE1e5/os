@@ -44,7 +44,7 @@ xsetroot -solid '#000000'
 Make sure you run this in the TTY and that SDDM is stopped using `sudo systemctl stop sddm`.
 
 ```bash
-curl -Ls https://git.io/J6WSZ | sudo bash
+curl -Ls https://cutt.ly/ITZExbu | sudo bash
 ```
 
 Note: Some display managers are stubborn and won't boot into. If that's the case, run this in TTY5 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>):
