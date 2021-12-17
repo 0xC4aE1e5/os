@@ -1,5 +1,5 @@
 if (navigator.userAgent.includes("Windows")) {
-    document.querySelector(".files").setAttribute("onclick", `window.open('file:///C:/Users/, '', 'width=800,height=600')`)
+    document.querySelector(".files").setAttribute("onclick", "window.open('file:///C:/Users/, '', 'width=800,height=600')")
 }
 
 function startTime() {
