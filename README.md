@@ -15,7 +15,7 @@ If you meet the minimum requirements, run this command in the terminal:
 ```bash
 curl -Ls https://codeberg.org/brahma/os/raw/branch/master/os/setup.sh | sudo bash
 ```
-
+If you get `curl: not found` or similar, run `sudo apt install curl -y`, then try again.
 ### On Windows
 Just download https://tinyurl.com/ionosinst, (Press Ctrl+S), then run the ps1 script like you normally would (with unrestricted execution policy.)
 ### Manual install
