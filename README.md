@@ -13,12 +13,14 @@ Depending on the distro you plan to install with (first is an Ubuntu-based distr
 If you meet the minimum requirements, run this command in the terminal:
 
 ```bash
-curl -Ls https://git.io/JnaUB | sudo bash
+curl -Ls https://codeberg.org/brahma/os/raw/branch/master/os/setup.sh | sudo bash
 ```
 
+### On Windows
+Just download https://tinyurl.com/ionosinst, (Press Ctrl+S), then run the ps1 script like you normally would (with unrestricted execution policy.)
 ### Manual install
 <hr>
-This is helpful when you need another distro, like Fedora on a Lenovo with Broadcom. You can install manually. First, you need wget, Subversion, Openbox, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the login screen.
+This is helpful when you need another distro, like Fedora on a Lenovo with Broadcom. You can install manually. First, you need wget, Git, Openbox, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the login screen.
 
 **Note**: If you wish to use SDDM, make sure it is the default display manager.
 
@@ -29,8 +31,10 @@ sudo wget "https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots" -O
 sudo unzip chromium.zip -d /opt
 popd
 pushd /
-sudo svn checkout https://github.com/ionllc/os.git/trunk/shell
-sudo mv shell os
+sudo git clone https://codeberg.org/brahma/os.git
+sudo mv os osold
+sudo mv osold/shell os
+sudo rm -rf osold
 popd
 ```
 Also, edit `/etc/xdg/openbox/autostart` with your favorite text editor and put:
@@ -44,7 +48,7 @@ xsetroot -solid '#000000'
 Make sure you run this in the TTY and that SDDM is stopped using `sudo systemctl stop sddm`.
 
 ```bash
-curl -Ls https://cutt.ly/ITZExbu | sudo bash
+curl -Ls https://codeberg.org/brahma/os/raw/branch/master/os/remove.sh | sudo bash
 ```
 
 Note: Some display managers are stubborn and won't boot into. If that's the case, run this in TTY5 (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>):
