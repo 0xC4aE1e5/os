@@ -12,11 +12,19 @@
     <script src="mize.min.js"></script>      
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script>
+        function addhttp(url) {
+            if (!/^(?:f|ht)tps?\:\/\//.test(url)) {
+                url = "http://" + url;
+            }
+            return url;
+        }  
+    </script>
 </head>
 <body bgcolor="#1F1F1F">
     <p id="clock" class="white-text right"></p>
     <div id="apps">
-        <button class="material-icons btn-small waves-effect white black-text app" title="Browser" onclick="window.open('https://google.com', '', 'width=800,height=600')">public</button>
+        <button class="material-icons btn-small waves-effect white black-text app" title="Browser" onclick="window.open(addhttp(prompt('Enter a URI')), '', 'width=800,height=600')">public</button>
         <button class="material-icons btn-small waves-effect white black-text app files" title="File Manager" onclick="window.open('file:///home/', '', 'width=800,height=600')">save</button>
         <button class="material-icons btn-small waves-effect white black-text app" title="App Maker" onclick="appmaker();">add</button>
     </div>
