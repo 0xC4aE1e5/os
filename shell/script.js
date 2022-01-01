@@ -10,7 +10,15 @@ function startTime() {
     document.getElementById('clock').innerHTML =  h + ":" + m;
     setTimeout(startTime, 1000);
 }
-  
+
+function addhttp(url) {
+    if (!/^(?:f|ht)tps?\:\/\//.test(url)) {
+        url = "http://" + url;
+    }
+    return url;
+}
+
+
 function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
