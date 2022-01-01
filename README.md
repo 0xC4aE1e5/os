@@ -20,7 +20,7 @@ If you get `curl: not found` or similar, run `sudo apt install curl -y`, then tr
 Just download https://tinyurl.com/ionosinst, (Press Ctrl+S), then run the ps1 script like you normally would (with unrestricted execution policy.)
 ### Manual install
 <hr>
-This is helpful when you need another distro, like Fedora on a Lenovo with Broadcom. You can install manually. First, you need wget, Git, Openbox, and Xsetroot. Subversion helps with pulling just the shell. wget helps with installing Chromium. You might also want SDDM, for the login screen.
+This is helpful when you need another distro, like Fedora on a Lenovo with Broadcom. You can install manually. First, you need wget, Git, Openbox, and Xsetroot. wget helps with installing Chromium. You might also want SDDM, for the login screen.
 
 **Note**: If you wish to use SDDM, make sure it is the default display manager.
 
