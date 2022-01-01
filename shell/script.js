@@ -33,7 +33,7 @@ function appgen() {
     var name = document.getElementById("title").value
     var url = document.getElementById("url").value;
     if (!localStorage.getItem("apps")) {
-        localStorage.setItem("apps", `<button class="btn-small waves-effect white black-text app" title="${name}" onclick="window.open('${url}', '', 'width=800,height=600')">${name}</button>`);
+        localStorage.setItem("apps", `<button class="btn-small waves-effect white black-text app" title="${name}" onclick="window.open('${addhttp(url)}', '', 'width=800,height=600')">${name}</button>`);
     } else {
         localStorage.setItem("apps", localStorage.getItem("apps") + `\n<button class="btn-small waves-effect white black-text app" title="${name}" onclick="window.open('${url}', '', 'width=800,height=600')">${name}</button>`);
     }
