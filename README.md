@@ -19,7 +19,7 @@ If you get `curl: not found` or similar, run `sudo apt install curl -y`, then tr
 ### On Windows
 Just download https://tinyurl.com/ionosinst, (Press Ctrl+S, replace txt with ps1, all files), right click and run with PowerShell
 #### Dualbooting
-Create a new user account (local account recommended, [I don't have this person's sign in info > Add without Microsoft account]), login to the new account, then run the IonOS installer like above
+Create a new user account (local account recommended, [I don't have this person's sign in info > Add without Microsoft account > add password so it doesn't autoboot]), login to the new account, then run the IonOS installer like above
 ### Manual install
 <hr>
 This is helpful when you need another distro, like Fedora on a Lenovo with Broadcom. You can install manually. First, you need wget, Git, Openbox, and Xsetroot. wget helps with installing Chromium. You might also want SDDM, for the login screen.
