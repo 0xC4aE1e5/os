@@ -1,8 +1,5 @@
 $OriginalPref = $ProgressPreference # Default is 'Continue'
 $ProgressPreference = "SilentlyContinue"
-cd $Home
-cmd /c mkdir $Home"\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-pause
 Clear-Host
 Write-Output "Doing step 1/5, please wait..."
 powershell "iwr -useb get.scoop.sh | iex"
