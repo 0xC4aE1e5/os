@@ -44,4 +44,3 @@ wscript tmp.vbs
 Start-Sleep -s 1
 Remove-Item tmp.vbs
 $ProgressPreference = $OriginalPref
-cmd /c pause
