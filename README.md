@@ -74,3 +74,9 @@ Run:
 ```bash
 DISPLAY=:0 <gui app> &
 ```
+
+## Interacting with Windows
+The Windows key is all you need. Just press it.
+
+## Switching minimized apps
+Press <kbd>Alt</kbd>+<kbd>Tab</kbd>.
