@@ -3,6 +3,7 @@ $ProgressPreference = "SilentlyContinue"
 Clear-Host
 Write-Output "Doing step 1/5, please wait..."
 powershell "iwr -useb get.scoop.sh | iex"
+$env:Path += ";$Home\scoop\shims"
 scoop install git
 Clear-Host
 Write-Output "Doing step 2/5, please wait..."
